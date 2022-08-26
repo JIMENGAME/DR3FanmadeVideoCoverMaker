@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Arial;
+    src: url("./res/Arial.ttf");
+}
+
+.cover-file {
+    background-color: #e6e6e6;
+}

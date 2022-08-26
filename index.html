@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<canvas id="canvas" width="1146" height="717"></canvas>
+<div>
+    分辨率：
+    <button id="bili-size" onclick="setIsBili(true)">哔哩哔哩</button>
+    <button id="other-size" onclick="setIsBili(false)">其他</button>
+</div>
+<label for="cover-file">曲绘：</label><input disabled="disabled" id="cover-file" type="file" accept=".jpg, .png, .jpeg, .webm, .bmp" class="cover-file">
+<strong id="cover-message"></strong>
+<br>
+<label for="random-background">（游戏主界面的）背景位置随机：</label><input type="checkbox" id="random-background">
+<br>
+<label for="hard">难度：（0~49，0将被显示为?）</label><input type="number" step="1" id="hard" value="9">
+<br>
+<label for="song-name">曲名：</label><input type="text" id="song-name" value="めんへらーめん">
+<label for="song-artist">曲师：</label><input type="text" id="song-artist" value="ぺぽよ">
+<br>
+<button type="button" id="start-button">开始</button>
+<button type="button" id="download">下载</button>
+</body>
+<script src="script.js"></script>
+</html>
