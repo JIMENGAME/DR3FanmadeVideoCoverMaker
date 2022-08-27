@@ -67,7 +67,6 @@ function drawPlaceholder() {
     ctx.fillStyle = "#1f1e33";
     ctx.font = "80px Arial";
     ctx.fillText(getPlaceholderText(document.documentElement.lang), canvas.width / 2, canvas.height / 2);
-    console.log(document.documentElement.lang);
 }
 
 function getPlaceholderText(lang) {
