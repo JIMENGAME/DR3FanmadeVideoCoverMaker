@@ -62,6 +62,25 @@ function resizeCanvas() {
 function drawPlaceholder() {
     ctx.fillStyle = "#d3d3d3";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.textBaseline = "middle";
+    ctx.textAlign = "center";
+    ctx.fillStyle = "#1f1e33";
+    ctx.font = "80px Arial";
+    ctx.fillText(getPlaceholderText(document.documentElement.lang), canvas.width / 2, canvas.height / 2);
+    console.log(document.documentElement.lang);
+}
+
+function getPlaceholderText(lang) {
+    switch (lang) {
+        case "zh":
+            return "准备完毕，等待上传…";
+        case "en":
+            return "End for preparation, waiting…";
+        case "ja":
+            return "準備完了、アップロード待ち";
+        default:
+            return "End for preparation, waiting…";
+    }
 }
 
 function draw() {
