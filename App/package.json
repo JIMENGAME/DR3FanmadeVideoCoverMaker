@@ -1,0 +1,17 @@
+{
+  "name": "dr3.fanmade.video.cover.maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit",
+    "start": "electron index.js",
+    "package": "electron-packager ./ DR3FanmadeVideoCoverMaker --platform=win32 --out ./../output --electron-version 20.1.1 --overwrite --icon=./icon.ico"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.1.1"
+  }
+}
